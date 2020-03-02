@@ -1,0 +1,368 @@
+@keyframes icon-rotate {
+    0% { transform: rotateY(0); }
+    25% { transform: rotateY(90deg); }
+    50% { transform: rotateY(180deg); }
+    75% { transform: rotateY(270deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 55px 150px auto auto 190px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+h5 {
+	font-size: 18px;
+	padding: 20px;
+	margin: 0px;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	color: #333333;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+    color: #346abb;
+    text-decoration: none;
+}
+
+nav, aside, main {
+    background-color: #fff;
+}
+
+nav {
+    grid-column: 2 / span 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+nav > div {
+    width: 25%;
+}
+
+nav > div > a {
+    font-weight: bold;
+    color: #141414;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+nav > div > a:hover {
+    background-color: #346abb;
+    color: #fff;
+
+}
+
+nav > div > a.active {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+nav > div > a > i {
+    margin-right: 8px;
+}
+
+header {
+    grid-column: 2 / span 11;
+    font-weight: 800;
+    padding-top: 80px;
+}
+
+aside {
+    grid-column: 2 /span 10;
+}
+
+.bdr-btm {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.padding-25 {
+    padding: 25px;
+}
+
+aside > h5 {
+    letter-spacing: 1px;
+}
+
+aside > img:nth-child(2) {
+    width: 540px;
+    max-width: 100%;
+    height: auto;
+}
+
+aside > ul > li {
+    list-style: none;
+}
+
+aside > ul > li > p {
+    line-height: 30px;
+}
+
+aside > ul > li > p > span {
+    width: 50%;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+li.attachments {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+li.attachments > p {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li.attachments i {
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+li.attachments i.fa-file-pdf, li.attachments i.fa-file-word {
+    font-size: 18px;
+}
+
+li.attachments i.fa-cloud-download-alt {
+    float: right;
+}
+
+li.attachments a {
+    color: #345abb;
+}
+
+aside > ul.sociallist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+ul.sociallist > li {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+
+}
+
+ul.sociallist > li > a {
+    color: #333333;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 48px;
+    transition: all 0.4s ease-in-out;
+}
+
+ul.sociallist > li > a:hover {
+    color: #fff;
+    background-color: #333333;
+}
+
+aside > form > input, aside > form > textarea {
+    font-family: inherit;
+    font-size: 13px;
+    color: #333;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+aside > form > textarea {
+    height: 120px;
+    padding: 10px 20px;
+}
+
+aside > form > input:focus, aside > form > textarea:focus {
+    /* border: 1px solid #5dade0; */
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+aside > form > button {
+    border: none;
+    background-color: #346abb;
+    color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+}
+
+aside > form > button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+main {
+    grid-column: 2 /span 10;
+}
+
+main > ul > li {
+    list-style: none;
+    width: 49%;
+    display: inline-block;
+}
+
+main > ul > li > p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+main > ul > li > p > span {
+    width: 50%;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main div.about-me p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+main div.skill {
+    margin: 50px auto; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+main div.skill-icon {
+    font-size: 40px;
+    color: #fff;
+    background-color: #345abb;
+    border: 1px solid #346abb;
+    margin: 0 auto 15px;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+main div.skill-icon i:hover {
+    animation-name: icon-rotate;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+
+}
+
+main div.skill-icon i {
+    line-height: 80px;
+    width: 100%;
+}
+
+main div.skill-box {
+    text-align: center;
+    margin: auto 15px;
+}
+
+main div.skill-box h6 {
+    margin: 10px auto;
+}
+
+main div.skill-box p {
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+footer {
+    grid-column: 1 / span 12;
+    background-color: black;
+    margin-top: 130px;
+}
+
+@media screen and (min-width:786px) {
+    
+}
+
+@media screen and (min-width: 1256px) {
+    body {
+        grid-template-rows: 55px 150px auto 190px;
+    }
+
+    aside {
+        grid-column: 2 / span 3;
+        margin-right: 15px;
+    }
+
+    main {
+        grid-column: span 7;
+        margin-left: 15px;
+    }
+
+    main div.skill {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    footer {
+        grid-column: span 12;
+    }
+}
