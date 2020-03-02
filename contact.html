@@ -2,21 +2,79 @@
 <html>
     <head>
         <title>RESUME</title>
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Vincent">
         <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa fa-user-o" aria-hidden="true"></i>ABOUT ME</a></li>
-                <li><a href="education.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</a></li>
-                <li><a href="experience.html"><i class="fa fa-building" aria-hidden="true"></i>EXPERIENCE</a></li>
-                <li><a class="active" href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i>CONTACT ME</a></li>
-            </ul>
+            <div role="presentation"><a href="index.html" role="tab"><i class="fa fa-user-o" aria-hidden="true"></i>About Me</a></div>
+            <div role="presentation"><a href="education.html" role="tab"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</a></div>
+            <div role="presentation"><a href="experience.html" role="tab"><i class="fa fa-building" aria-hidden="true"></i>Experience</a></div>
+            <div role="presentation"><a class="active" href="contact.html" role="tab"><i class="fa fa-address-card" aria-hidden="true"></i>Contact Me</a></div>
         </nav>
+        <header>
+            <h4>Resume</h4>
+        </header>
+        <aside>
+            <h5 class="padding-25 bdr-btm">Professional Details</h5>
+            <img src="https://cdn.pixabay.com/photo/2018/02/08/16/09/dog-3139757_960_720.jpg" alt="Photo">
+            <ul class="padding-25 bdr-btm">
+                <li><p><span>Name</span>Vincent</p></li>
+                <li><p><span>Location</span>Edmonton, Canada</p></li>
+                <li><p><span>Experience</span>1 Year</p></li>
+                <li><p><span>Degree</span>Master</p></li>
+                <li><p><span>Phone</span><a href="tel:(780)123-4567">(780)123-4567</a></p></li>
+                <li><p><span>E-Mail</span><a href="mailto:hoho@gmail.com">hoho@gmail.com</a></p></li>
+                <li><p><span>Website</span><a href="https://hoho.com">hoho.com</a></p></li>
+            </ul>
+            <h5 class="padding-25 bdr-btm">Attachments</h5>
+            <ul class="padding-25 bdr-btm">
+                <li class="attachments"><p><i class="fas fa-file-pdf"></i><a href="/doc/resume.pdf" download="#">Resume.pdf<i class="fas fa-cloud-download-alt"></i></a></p></li>
+                <li class="attachments"><p><i class="fas fa-file-word"></i><a href="/doc/resume.doc" download="#">Resume.doc<i class="fas fa-cloud-download-alt"></i></a></p></li>
+            </ul>
+            <h5 class="padding-25 bdr-btm">Social Profiles</h5>
+            <ul class="sociallist padding-25 bdr-btm">
+                <li><a href="http://fb.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://google.com" target="_blank"><i class="fab fa-google"></i></a></li>
+                <li><a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="http://skype.com" target="_blank"><i class="fab fa-skype"></i></a></li>
+            </ul>
+            <h5 class="padding-25 bdr-btm">Contect Me</h5>
+            <form class="padding-25 bdr-btm" action="#" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button>Submit Message</button>
+            </form>   
+        </aside>
+        <main>
+            <h5 class="padding-25 bdr-btm">Contect Me</h5>
+            <div class="contactmelist">
+                <div class="contactme">
+                    <div class="contactme-icon"><i class="fas fa-mobile"></i></div>
+                    <p><a href="tel:(780)123-4567">(780)123-4567</a></p>
+                </div>
+                <div class="contactme">
+                    <div class="contactme-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <p>Enterprise Square </p>
+                    <p>103 St NW, Edmonton, AB, T5J 5A3</p>
+                </div>
+                <div class="contactme">
+                    <div class="contactme-icon"><i class="fas fa-envelope"></i></div>
+                    <p><a href="mailto:hoho@gmail.com">hoho@gmail.com</a></p>
+                </div>
+            </div>
+            <iframe width="100%" height="30%" id="gmap_canvas" src="https://maps.google.com/maps?q=enterprise%20square&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </main>
+        <footer>
+
+        </footer>
     </body>
 </html>

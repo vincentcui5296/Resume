@@ -1,0 +1,38 @@
+main div.contactmelist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    margin: 50px 30px;
+}
+
+main div.contactme {
+    margin: 0 15px;
+    text-align: center;
+}
+
+main div.contactme-icon {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+main div.contactme-icon i {
+    font-size: 26px;
+    color: #337ab7;
+    width: 100%;
+    line-height: 80px;
+}
+
+main div.contactme-icon i:hover {
+    animation-name: icon-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
+
+
+
