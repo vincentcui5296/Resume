@@ -187,14 +187,14 @@ li.attachments a {
     color: #345abb;
 }
 
-aside > ul.sociallist {
+aside > ul.social-list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-ul.sociallist > li {
+ul.social-list > li {
     width: 48px;
     height: 48px;
     border: 1px solid #cdcdcd;
@@ -202,7 +202,7 @@ ul.sociallist > li {
 
 }
 
-ul.sociallist > li > a {
+ul.social-list > li > a {
     color: #333333;
     display: inline-block;
     width: 100%;
@@ -211,7 +211,7 @@ ul.sociallist > li > a {
     transition: all 0.4s ease-in-out;
 }
 
-ul.sociallist > li > a:hover {
+ul.social-list > li > a:hover {
     color: #fff;
     background-color: #333333;
 }
